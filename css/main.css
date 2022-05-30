@@ -609,15 +609,46 @@ ol {
   margin-bottom: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-four__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .section-four__img {
+  margin-bottom: 30px;
   margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--logo-color-two);
 }
 
+@media screen and (min-width: 768px) {
+  .section-four__img:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-four__img {
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-four__img:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-four__img {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
 .section-four__img-block {
-  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -690,6 +721,12 @@ ol {
 .section-four__sign {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.section-four__soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-clients__list {
