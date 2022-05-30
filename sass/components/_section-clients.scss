@@ -1,0 +1,38 @@
+.section-clients__list {
+  display: flex;
+}
+
+.section-clients__item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icon);
+  cursor: pointer;
+  transition: fill var(--main-transition-time) var(--cubic),
+    border-color var(--main-transition-time) var(--cubic);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover {
+    border-color: var(--logo-color-left);
+    fill: var(--logo-color-left);
+  }
+}
+
+.section-clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding: 0;
+  color: var(--secondary-color);
+}
