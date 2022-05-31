@@ -685,13 +685,18 @@ ol {
 
 .section-four__title {
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   padding: 0;
   color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1119px) {
+  .section-four__title {
+    font-size: 28px;
+  }
 }
 
 .section-four__list {
@@ -731,10 +736,12 @@ ol {
 
 .section-clients__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .section-clients__item {
-  width: 170px;
+  width: calc(100% / 2 - 2 * 30px);
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -743,12 +750,21 @@ ol {
   justify-content: center;
   align-items: center;
   fill: var(--color-icon);
+  margin: 15px;
   cursor: pointer;
   transition: fill var(--main-transition-time) var(--cubic), border-color var(--main-transition-time) var(--cubic);
 }
 
-.section-clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .section-clients__item {
+    width: calc(100% / 3 - 2 * 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-clients__item {
+    width: calc(100% / 6 - 30px);
+  }
 }
 
 .section-clients__item:hover {
@@ -758,13 +774,20 @@ ol {
 
 .section-clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  margin-bottom: 30px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
   padding: 0;
   color: var(--secondary-color);
+}
+
+@media screen and (min-width: 1120px) {
+  .section-clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .footer {
