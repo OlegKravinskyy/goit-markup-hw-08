@@ -983,19 +983,36 @@ ol {
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: var(--secondary-color);
 }
 
 .footer .container {
+  background-color: var(--hero-color);
+  padding: 60px 15px;
+}
+
+.footer__contacts,
+.footer__social,
+.footer__subscribe {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__sub-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__logo {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--logo-color-two);
 }
@@ -1005,6 +1022,8 @@ ol {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--logo-color-two);
+  display: flex;
+  justify-content: center;
 }
 
 .footer__adress-link {
@@ -1012,14 +1031,18 @@ ol {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--address-text-color);
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 .footer__item {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .footer__social {
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .footer__social-join {
@@ -1031,27 +1054,19 @@ ol {
   color: var(--logo-color-two);
 }
 
-.footer__subscribe {
-  margin-left: 93px;
-}
-
-.footer__sub-field {
-  display: flex;
-  margin-top: 20px;
-}
-
 .footer__text {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
   color: var(--logo-color-two);
 }
 
 .footer__input {
   width: 358px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 0px 15px 16px;
   background-color: var(--hero-color);
   color: var(--logo-color-two);
@@ -1061,6 +1076,7 @@ ol {
 }
 
 .footer__icon {
+  margin-left: 12px;
   fill: var(--logo-color-two);
 }
 
@@ -1123,8 +1139,12 @@ ol {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 93px;
   color: var(--logo-color-left);
+}
+
+.footer__soc-item {
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio {
