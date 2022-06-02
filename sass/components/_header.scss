@@ -46,6 +46,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
+    margin: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -167,6 +168,10 @@
   background-color: var(--logo-color-two);
 }
 
+.header__icon-mob:hover {
+  fill: var(--logo-color-left);
+}
+
 .menu-close-btn {
   display: block;
   margin-left: auto;
@@ -274,6 +279,18 @@
 .mob__soc-item {
   &:not(:last-child) {
     margin-right: 20px;
+  }
+
+  &::after {
+    content: '';
+    position: relative;
+    width: 22px;
+    height: 0px;
+    left: 135px;
+    top: 726px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
   }
 }
 

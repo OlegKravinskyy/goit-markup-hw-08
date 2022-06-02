@@ -25,7 +25,12 @@
     <header class="header">
       <div class="container">
         <a href="./index.html" class="header__logo">Web<span class="logo">Studio</span></a>
-        <nav class="header-navigation">
+        <button class="menu-open-btn" type="button" menu-open-btn>
+          <svg class="header__icon-mob" width="40" height="40">
+            <use href="./images/icons/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item-pages">
               <a href="./index.html" class="header__link-pages">Студия</a>
@@ -39,8 +44,8 @@
           </ul>
         </nav>
         <div class="header-connect">
-          <ul class="header__list">
-            <li>
+          <ul class="header__list list">
+            <li class="header__item">
               <a href="mailto:info@devstudio.com" class="header__link">
                 <svg class="header__icon" width="16" height="12">
                   <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
@@ -48,7 +53,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li>
+            <li class="header-item">
               <a class="header__link" href="tel:+380961111111">
                 <svg class="header__icon" width="10" height="16">
                   <use href="./images/icons/symbol-defs.svg#icon-Vector"></use>
@@ -57,6 +62,110 @@
               </a>
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden" mob-menu>
+        <div class="conteiner">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" menu-close-btn>
+              <svg class="header__menu-close" width="40" height="40">
+                <use href="./images/icons/symbol-defs.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list">
+              <li class="mob-menu__item-pages">
+                <a href="" class="mob-menu__link-pages current">Студия</a>
+              </li>
+              <li class="mob-menu__item-pages">
+                <a href="./portfolio.html" class="mob-menu__link-pages">Портфолио</a>
+              </li>
+              <li class="mob-menu__item-pages">
+                <a href="" class="mob-menu__link-pages">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <ul class="mob__list">
+                <li class="mob__item">
+                  <a class="mob__link-tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+                </li>
+
+                <li class="mob__item">
+                  <a href="mailto:info@devstudio.com" class="mob__link-email">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="mob__soc-list">
+              <li class="mob__soc-item">
+                <a href="" class="mob__soc-link">Instagram</a>
+                <p class="mob__soc-line"></p>
+              </li>
+              <li class="mob__soc-item">
+                <a href="" class="mob__soc-link">Twitter</a>
+              </li>
+              <li class="mob__soc-item">
+                <a href="" class="mob__soc-link">Facebook</a>
+              </li>
+              <li class="mob__soc-item">
+                <a href="" class="mob__soc-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden" mob-menu>
+        <div class="conteiner">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" menu-close-btn>
+              <svg class="header__menu-close" width="40" height="40">
+                <use href="./images/icons/symbol-defs.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list">
+              <li class="mob-menu__item-pages">
+                <a href="" class="mob-menu__link-pages current">Студия</a>
+              </li>
+              <li class="mob-menu__item-pages">
+                <a href="./portfolio.html" class="mob-menu__link-pages">Портфолио</a>
+              </li>
+              <li class="mob-menu__item-pages">
+                <a href="" class="mob-menu__link-pages">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <ul class="mob__list">
+                <li class="mob__item">
+                  <a class="mob__link-tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+                </li>
+
+                <li class="mob__item">
+                  <a href="mailto:info@devstudio.com" class="mob__link-email">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="mob__soc-list">
+              <li class="mob__soc-item">
+                <a href="" class="mob__soc-link">Instagram</a>
+                <p class="mob__soc-line"></p>
+              </li>
+              <li class="mob__soc-item">
+                <a href="" class="mob__soc-link">Twitter</a>
+              </li>
+              <li class="mob__soc-item">
+                <a href="" class="mob__soc-link">Facebook</a>
+              </li>
+              <li class="mob__soc-item">
+                <a href="" class="mob__soc-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -311,7 +420,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__tablet">
         <div class="footer__contacts">
           <div class="footer__item">
             <a href="" class="footer__logo-left">Web<span class="footer__logo">Studio</span></a>
