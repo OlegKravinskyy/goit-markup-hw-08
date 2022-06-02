@@ -221,3 +221,8 @@
 
   color: var(--logo-color-left);
 }
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
