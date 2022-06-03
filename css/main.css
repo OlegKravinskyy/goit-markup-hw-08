@@ -381,18 +381,9 @@ ol {
 }
 
 .mob__soc-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.mob__soc-item::after {
-  content: '';
-  position: relative;
-  width: 22px;
-  height: 0px;
-  left: 135px;
-  top: 726px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob__soc-link {
