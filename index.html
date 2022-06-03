@@ -293,13 +293,21 @@
           <h2 class="section-four__title">Наша команда</h2>
           <ul class="section-four__list">
             <li class="section-four__img">
-              <img
-                class="section-four__img-block"
-                src="./images/photo-ihor.jpg"
-                alt="игорь"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo-ihor.jpg 1x, ./images/photo-ihor-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/photo-ihor-tablet.jpg 1x, ./images/photo-ihor-tablet-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/photo-ihor-mob.jpg 1x, ./images/photo-ihor-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img class="section-four__img-block" src="./images/photo-ihor.jpg" alt="игорь" />
+              </picture>
               <div class="section-four__sign">
                 <h3 class="section-four__name">Игорь Демьяненко</h3>
                 <p lang="en" class="section-four__text">Product Designer</p>
@@ -338,13 +346,22 @@
               </div>
             </li>
             <li class="section-four__img">
-              <img
-                class="section-four__img-block"
-                src="./images/photo-olga.jpg"
-                alt="ольга"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo-olga.jpg 1x, ./images/photo-olga-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/photo-olga-tablet.jpg 1x, ./images/photo-olga-tablet-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/photo-olga-mob.jpg 1x, ./images/photo-olga-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img class="section-four__img-block" src="./images/photo-olga.jpg" alt="Ольга" />
+              </picture>
+
               <div class="section-four__sign">
                 <h3 class="section-four__name">Ольга Репина</h3>
                 <p lang="en" class="section-four__text">Frontend Developer</p>
@@ -383,13 +400,29 @@
               </div>
             </li>
             <li class="section-four__img">
-              <img
-                class="section-four__img-block"
-                src="./images/photo-nikolay.jpg"
-                alt="николай"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo-nikolay.jpg 1x, ./images/photo-nikolay-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo-nikolay-tablet.jpg    1x,
+                    ./images/photo-nikolay-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/photo-nikolay-mob.jpg 1x, ./images/photo-nikolay-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="section-four__img-block"
+                  src="./images/photo-nikolay.jpg"
+                  alt="Николай"
+                />
+              </picture>
+
               <div class="section-four__sign">
                 <h3 class="section-four__name">Николай Тарасов</h3>
                 <p lang="en" class="section-four__text">Marketing</p>
@@ -428,13 +461,29 @@
               </div>
             </li>
             <li class="section-four__img">
-              <img
-                class="section-four__img-block"
-                src="./images/photo-michael.jpg"
-                alt="михаил"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo-michael.jpg 1x, ./images/photo-michael-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo-michael-tablet.jpg    1x,
+                    ./images/photo-michael-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/photo-michael-mob.jpg 1x, ./images/photo-michael-mob-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="section-four__img-block"
+                  src="./images/photo-michael.jpg"
+                  alt="Михаил"
+                />
+              </picture>
+
               <div class="section-four__sign">
                 <h3 class="section-four__name">Михаил Ермаков</h3>
                 <p lang="en" class="section-four__text">UI Designer</p>
