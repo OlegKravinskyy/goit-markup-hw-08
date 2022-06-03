@@ -1369,7 +1369,9 @@ ol {
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: -30px;
+  margin-bottom: -30px;
   margin-top: 0;
 }
 
@@ -1385,9 +1387,25 @@ ol {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .portfolio__flex-element {
-  width: 370px;
-  flex-basis: calc((100% - 90px) / 3);
+  max-width: 100%;
+  flex-basis: calc(100% / 3);
   margin-left: 30px;
   transition: box-shadow var(--main-transition-time) var(--cubic);
 }
