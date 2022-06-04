@@ -198,14 +198,37 @@
               <li class="portfolio__item">
                 <div class="portfolio__flex-element">
                   <div class="portfolio__technokryak">
-                    <img
+                    <picture>
+                      <source
+                        srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1-2x.jpg 2x"
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-1-tablet.jpg    1x,
+                          ./images/portfolio-1-tablet-2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="./images/portfolio-1-mob.jpg 1x, ./images/portfolio-1-mob-2x.jpg 2x"
+                        media="(min-width:320px)"
+                      />
+                      <img
+                        class="portfolio__img-block"
+                        src="./images/portfolio-1.jpg"
+                        alt="игорь"
+                      />
+                    </picture>
+
+                    <!-- <img
                       class="portfolio__img-block"
                       src="./images/portfolio-1.jpg"
                       alt="технокряк"
                       width="370"
                       height="294"
                     />
-
+ -->
                     <div class="portfolio__overley">
                       <p class="portfolio__overley-text">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
