@@ -2,16 +2,15 @@
   color: var(--secondary-color);
   border-bottom: 1px solid #ececec;
 
-  & .container {
+  .container {
     display: flex;
     align-items: center;
     margin: 0;
     max-width: 1600px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-left: 215px;
-    padding-right: 215px;
+    @media screen and (min-width: 1200px) {
+      padding-left: 215px;
+      padding-right: 215px;
+    }
   }
 }
 
